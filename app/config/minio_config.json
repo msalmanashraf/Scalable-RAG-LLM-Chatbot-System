@@ -1,0 +1,11 @@
+{
+  "endpoint": "localhost:9000",
+  "username": "minioadmin",
+  "password": "minioadmin",
+  "access_key": "novMmx4bJZhWMbCbAGFl",
+  "secret_key": "WyXyZpHw5L2v9zid3M1clF8yiXic1U6HGQmdKsTI",
+  "bucket_name": "faq-documents",
+  "queue_arn": "arn:minio:sqs::primary:amqp",
+  "secure": false
+}
+

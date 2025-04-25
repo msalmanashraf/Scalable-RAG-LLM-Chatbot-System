@@ -1,0 +1,54 @@
+{
+  "rabbitmq": {
+    "host": "localhost",
+    "port": 5672,
+    "heartbeat": 600,  
+    "blocked_connection_timeout":300,
+    "username": "salman",
+    "password": "salman",
+    "queues": [
+      {
+        "name": "minio_events_queue",
+        "durable": true,
+        "exclusive": false,
+        "auto_delete": false,
+        "arguments": {}
+      },
+      {
+        "name": "document_chunks_queue",
+        "durable": true,
+        "exclusive": false,
+        "auto_delete": false,
+        "arguments": {
+          "x-message-ttl": 60000
+        }
+      },
+      {
+        "name": "query_queue",
+        "durable": true,
+        "exclusive": false,
+        "auto_delete": false,
+        "arguments": {
+          "x-max-length": 1000
+        }
+      },
+      {
+        "name": "query_embedding_queue",
+        "durable": true,
+        "exclusive": false,
+        "auto_delete": false,
+        "arguments": {
+          "x-max-length": 1000
+        }
+      },
+      {
+        "name": "callback_queue",
+        "durable": false,
+        "exclusive": true,
+        "auto_delete": true,
+        "arguments": {}
+      }
+    ]
+  }
+}
+
