@@ -4,6 +4,8 @@ A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload docum
 
 ---
 
+![Architecture](architecture.jpg)
+
 ## 📖 Table of Contents
 
 - [Project Overview](#project-overview)
@@ -50,8 +52,6 @@ User Query → FastAPI → Query Queue
 
 Client polls FastAPI with task_id → Returns answer
 ```
-![Architecture](architecture.jpg)
-
 ---
 
 ## 💻 Tech Stack
